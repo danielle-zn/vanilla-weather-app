@@ -15,144 +15,147 @@
   </head>
   <body>
     <div class="container">
-      <div class="buttons">
-        <form id="search-form">
-          <div class="row">
-            <div class="col-5">
-              <input
-                type="search"
-                placeholder="Enter city name..."
-                class="form-control"
-                autofocus="on"
-                autocomplete="off"
-                id="search-input"
-              />
+      <div class="weather-app">
+        <div class="buttons">
+          <form id="search-form">
+            <div class="row">
+              <div class="col-5">
+                <input
+                  type="search"
+                  placeholder="Enter city name..."
+                  class="form-control"
+                  autofocus="on"
+                  autocomplete="off"
+                  id="search-input"
+                />
+              </div>
+              <div class="col-2">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-secondary"
+                  id="search-button"
+                />
+              </div>
+              <div class="col-2">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  id="current-button"
+                >
+                  Current
+                </button>
+              </div>
             </div>
-            <div class="col-2">
-              <input
-                type="submit"
-                value="Search"
-                class="form-control btn btn-secondary"
-                id="search-button"
-              />
-            </div>
-            <div class="col-2">
-              <button type="button" class="btn btn-success" id="current-button">
-                Current
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <br />
-
-      <div class="row">
-        <div class="col-6">
-          <div class="current">
-            <h1>
-              <span id="weatherDescription"></span>
-              <div><span id="temperature"></span>°C</div>
-            </h1>
-            <img src="images/sun.png" alt="bright sun" width="100" />
-
-            <h1>32° | 21°</h1>
-          </div>
+          </form>
         </div>
 
-        <div class="col-6">
-          <div class="details">
-            <h2 id="city-name"></h2>
-            <br />
-            <h3 id="date">
-              Wed, June 2
-              <div>4:00</div>
-            </h3>
-            <br />
-            <h5>
-              <div>Humidity: <span id="humidity"></span>%</div>
-              <div>Wind: <span id="wind"></span> km/h</div>
-            </h5>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <section class="forecast">
+        <br />
+        <h1>Calgary</h1>
+        <ul>
+          <li>Saturday 14:47</li>
+          <li>sunny</li>
+        </ul>
         <div class="row">
-          <div class="card" style="width: 7rem">
-            <p class="card-text">Thu</p>
-            <img src="images/sun.png" class="card-img-top" alt="shining sun" />
-            <div class="card-body">
-              <p class="card-text">32° | 15°</p>
-            </div>
+          <div class="col-6">
+            <img src="images/sun.png" alt="bright sun" width="100" />
+            31°C | °F
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Precipitation: 0%</li>
+              <li>Humidity: 14%</li>
+              <li>Wind: 2 km/h</li>
+            </ul>
           </div>
 
-          <div class="card" style="width: 7rem">
-            <p class="card-text">Fri</p>
-            <img
-              src="images/cloudycolor.png"
-              class="card-img-top"
-              alt="shining sun"
-            />
-            <div class="card-body">
-              <p class="card-text">28° | 10°</p>
-            </div>
-          </div>
+          <br />
 
-          <div class="card" style="width: 7rem">
-            <p class="card-text">Sat</p>
-            <img
-              src="images/cloudysun.png"
-              class="card-img-top"
-              alt="shining sun"
-            />
-            <div class="card-body">
-              <p class="card-text">18° | 7°</p>
-            </div>
-          </div>
+          <section class="forecast">
+            <div class="row">
+              <div class="card" style="width: 7rem">
+                <p class="card-text">Thu</p>
+                <img
+                  src="images/sun.png"
+                  class="card-img-top"
+                  alt="shining sun"
+                />
+                <div class="card-body">
+                  <p class="card-text">32° | 15°</p>
+                </div>
+              </div>
 
-          <div class="card" style="width: 7rem">
-            <p class="card-text">Sun</p>
-            <img
-              src="images/cloudycolor.png"
-              class="card-img-top"
-              alt="shining sun"
-            />
-            <div class="card-body">
-              <p class="card-text">18° | 4°</p>
-            </div>
-          </div>
+              <div class="card" style="width: 7rem">
+                <p class="card-text">Fri</p>
+                <img
+                  src="images/cloudycolor.png"
+                  class="card-img-top"
+                  alt="shining sun"
+                />
+                <div class="card-body">
+                  <p class="card-text">28° | 10°</p>
+                </div>
+              </div>
 
-          <div class="card" style="width: 7rem">
-            <p class="card-text">Mon</p>
-            <img
-              src="images/cloudycolor.png"
-              class="card-img-top"
-              alt="shining sun"
-            />
-            <div class="card-body">
-              <p class="card-text">17° | 5°</p>
+              <div class="card" style="width: 7rem">
+                <p class="card-text">Sat</p>
+                <img
+                  src="images/cloudysun.png"
+                  class="card-img-top"
+                  alt="shining sun"
+                />
+                <div class="card-body">
+                  <p class="card-text">18° | 7°</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 7rem">
+                <p class="card-text">Sun</p>
+                <img
+                  src="images/cloudycolor.png"
+                  class="card-img-top"
+                  alt="shining sun"
+                />
+                <div class="card-body">
+                  <p class="card-text">18° | 4°</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 7rem">
+                <p class="card-text">Mon</p>
+                <img
+                  src="images/cloudycolor.png"
+                  class="card-img-top"
+                  alt="shining sun"
+                />
+                <div class="card-body">
+                  <p class="card-text">17° | 5°</p>
+                </div>
+              </div>
             </div>
-          </div>
+          </section>
         </div>
-      </section>
-    </div>
-    <br />
-    <br />
+        <br />
+        <br />
 
-    <footer class="footer">
-      <div><a href="https://github.com/danielle-zn/vanilla-weather-app.git" target="_blank">Open-source code</a> by Danielle Zamora Nieto</div>
-      <div>
-        Icons made by
-        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
+        <footer class="footer">
+          <div>
+            <a
+              href="https://github.com/danielle-zn/vanilla-weather-app.git"
+              target="_blank"
+              >Open-source code</a
+            >
+            by Danielle Zamora Nieto
+          </div>
+          <div>
+            Icons made by
+            <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon"
+              >www.flaticon.com</a
+            >
+          </div>
+        </footer>
       </div>
-    </footer>
-
     </div>
     <script src="src/index.js"></script>
   </body>
