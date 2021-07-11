@@ -59,21 +59,34 @@
         <br />
 
         <div class="row">
-          <div class="col-6">
-            <h1>Calgary</h1>
-            <h4>sunny</h4>
-            <img src="images/sun.png" alt="bright sun" />
-            31°C | °F
-          </div>
-          <div class="col-6">
-            <ul class="weather-data">
-              <li>Saturday, 14:47</li>
-              <li>Humidity: 14%</li>
-              <li>Wind: 2 km/h</li>
-            </ul>
-          </div>
+        <div class="col-6">
+          <div class="current">
+            <h1>
+              <span id="weatherDescription"></span>
+              <div><span id="temperature"></span>°C</div>
+            </h1>
+            <img src="images/sun.png" alt="bright sun" width="100" />
 
-          <br />
+            <h1>32° | 21°</h1>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="details">
+            <h2 id="city-name">Calgary</h2>
+            <br />
+            <h3 id="date">
+              Wed, June 2
+              <div>4:00</div>
+            </h3>
+            <br />
+            <h5>
+              <div>Humidity: <span id="humidity"></span>%</div>
+              <div>Wind: <span id="wind"></span> km/h</div>
+            </h5>
+          </div>
+        </div>
+      </div>
 
           <section class="forecast">
             <div class="row">
