@@ -41,12 +41,13 @@ dateElement.innerHTML = formatDate(currentTime);
 //////////////////// Search Engine and API
 
 function showTemperature(response) {
+  console.log(response.data);
   document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
   document.querySelector("#weatherDescription").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -70,7 +71,7 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-search("Calgary"); //this calls NY automatically when you open the page
+search("Calgary"); //this calls the city automatically when you open the page
 
 //////////////// Geolocation API
 
@@ -82,7 +83,7 @@ function retrievePosition(position) {
   let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
   let apiUrl = `${apiEndpoint}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
 
-  axios.get(apiUrl).then(showTemperature); ///showTemperature calls the function we already built above, so no need to create a new function
+  axios.get(apiUrl).then(showTemperature);
 }
 
 function getCurrentPosition() {
