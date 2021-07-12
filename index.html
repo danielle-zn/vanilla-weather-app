@@ -59,121 +59,126 @@
         <br />
 
         <div class="row">
-        <div class="col-6">
-          <div class="current">
-            <h1>
-              <span id="weatherDescription"></span>
-              <div><span id="temperature"></span>°C</div>
-            </h1>
-            <img src="images/sun.png" alt="bright sun" width="100" />
+          <div class="col-6">
+            <div class="current">
+              <h1 id="city-name">Calgary</h1>
+              <h3 id="weatherDescription">sunny</h3>
+              <img src="images/sun.png" alt="bright sun" width="100" />
+              <h1 class="current-temp">
+                <span id="temperature">32</span
+                ><span class="units">°C | <a href="#">°F</a></span>
+              </h1>
+            </div>
+          </div>
 
-            <h1>32° | 21°</h1>
+          <div class="col-6">
+            <div class="details">
+              <h2 id="date">
+                Wed, June 2
+                <div>4:00</div>
+              </h2>
+              <br />
+              <h4>
+                <div>Humidity: <span id="humidity"></span>%</div>
+                <div>Wind: <span id="wind"></span> km/h</div>
+              </h4>
+              <br />
+              <h4>
+                High: 32°
+                <div>Low: 21°</div>
+              </h4>
+            </div>
           </div>
         </div>
 
-        <div class="col-6">
-          <div class="details">
-            <h2 id="city-name">Calgary</h2>
-            <br />
-            <h3 id="date">
-              Wed, June 2
-              <div>4:00</div>
-            </h3>
-            <br />
-            <h5>
-              <div>Humidity: <span id="humidity"></span>%</div>
-              <div>Wind: <span id="wind"></span> km/h</div>
-            </h5>
-          </div>
-        </div>
-      </div>
-
-          <section class="forecast">
-            <div class="row">
-              <div class="card" style="width: 7rem">
-                <p class="card-text">Thu</p>
-                <img
-                  src="images/sun.png"
-                  class="card-img-top"
-                  alt="shining sun"
-                />
-                <div class="card-body">
-                  <p class="card-text">32° | 15°</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 7rem">
-                <p class="card-text">Fri</p>
-                <img
-                  src="images/cloudycolor.png"
-                  class="card-img-top"
-                  alt="shining sun"
-                />
-                <div class="card-body">
-                  <p class="card-text">28° | 10°</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 7rem">
-                <p class="card-text">Sat</p>
-                <img
-                  src="images/cloudysun.png"
-                  class="card-img-top"
-                  alt="shining sun"
-                />
-                <div class="card-body">
-                  <p class="card-text">18° | 7°</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 7rem">
-                <p class="card-text">Sun</p>
-                <img
-                  src="images/cloudycolor.png"
-                  class="card-img-top"
-                  alt="shining sun"
-                />
-                <div class="card-body">
-                  <p class="card-text">18° | 4°</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 7rem">
-                <p class="card-text">Mon</p>
-                <img
-                  src="images/cloudycolor.png"
-                  class="card-img-top"
-                  alt="shining sun"
-                />
-                <div class="card-body">
-                  <p class="card-text">17° | 5°</p>
-                </div>
+        <section class="forecast">
+          <div class="row">
+            <div class="card" style="width: 7rem">
+              <p class="card-text">Thu</p>
+              <img
+                src="images/sun.png"
+                class="card-img-top"
+                alt="shining sun"
+              />
+              <div class="card-body">
+                <p class="card-text">32° | 15°</p>
               </div>
             </div>
-          </section>
-        </div>
-      </div>
-      <br />
-      <br />
 
-      <footer class="footer">
-        <div>
-          <a
-            href="https://github.com/danielle-zn/vanilla-weather-app.git"
-            target="_blank"
-            >Open-source code</a
-          >
-          by Danielle Zamora Nieto
-        </div>
-        <div>
-          Icons made by
-          <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
-          <a href="https://www.flaticon.com/" title="Flaticon"
-            >www.flaticon.com</a
-          >
-        </div>
-      </footer>
+            <div class="card" style="width: 7rem">
+              <p class="card-text">Fri</p>
+              <img
+                src="images/cloudycolor.png"
+                class="card-img-top"
+                alt="shining sun"
+              />
+              <div class="card-body">
+                <p class="card-text">28° | 10°</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 7rem">
+              <p class="card-text">Sat</p>
+              <img
+                src="images/cloudysun.png"
+                class="card-img-top"
+                alt="shining sun"
+              />
+              <div class="card-body">
+                <p class="card-text">18° | 7°</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 7rem">
+              <p class="card-text">Sun</p>
+              <img
+                src="images/cloudycolor.png"
+                class="card-img-top"
+                alt="shining sun"
+              />
+              <div class="card-body">
+                <p class="card-text">18° | 4°</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 7rem">
+              <p class="card-text">Mon</p>
+              <img
+                src="images/cloudycolor.png"
+                class="card-img-top"
+                alt="shining sun"
+              />
+              <div class="card-body">
+                <p class="card-text">17° | 5°</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
+
+    <footer class="footer">
+      <div>
+        <a
+          href="https://github.com/danielle-zn/vanilla-weather-app.git"
+          target="_blank"
+          class="links"
+          >Open-source code</a
+        >
+        by Danielle Zamora Nieto
+      </div>
+      <div>
+        Icons made by
+        <a href="https://www.freepik.com" title="Freepik" class="links"
+          >Freepik</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon" class="links"
+          >www.flaticon.com</a
+        >
+      </div>
+    </footer>
+
     <script src="src/index.js"></script>
   </body>
 </html>

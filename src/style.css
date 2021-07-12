@@ -1,6 +1,22 @@
 img {
   max-width: 85px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.weather-app {
+  position: relative;
+  top: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 35px 30px;
+  border-radius: 10px;
+  background: linear-gradient(
+    110.5deg,
+    rgba(248, 196, 249, 0.66) 22.8%,
+    rgba(253, 122, 4, 0.15) 64.6%
+  );
+  font-family: "Baloo Tammudu 2", cursive;
 }
 
 .buttons {
@@ -18,11 +34,12 @@ img {
 .details {
   text-align: center;
   position: relative;
-  top: 18px;
+  top: 5px;
   right: 20px;
 }
 
 .forecast {
+  margin-top: 20px;
   border: 2px solid #ffff;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -50,18 +67,28 @@ img {
 .footer {
   text-align: center;
   font-size: 15px;
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
-.weather-app {
+
+.links {
+  color: #e013b4;
+  text-decoration: none;
+}
+
+.links:hover {
+  color: #e013b4;
+  text-decoration: underline;
+}
+
+.units {
+  font-weight: 200;
+  font-size: 20px;
   position: relative;
-  top: 30px;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 60px 30px;
-  border-radius: 10px;
-  background: linear-gradient(
-    110.5deg,
-    rgba(248, 196, 249, 0.66) 22.8%,
-    rgba(253, 122, 4, 0.15) 64.6%
-  );
-  font-family: "Baloo Tammudu 2", cursive;
+  top: -15px;
+}
+
+.current-temp {
+  position: relative;
+  left: 22px;
 }
