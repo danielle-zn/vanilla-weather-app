@@ -41,7 +41,6 @@ dateElement.innerHTML = formatDate(currentTime);
 //////////////////// Search Engine and API
 
 function showTemperature(response) {
-  console.log(response.data);
   document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -76,7 +75,7 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-search("Calgary"); //this calls the city automatically when you open the page
+search("Tokyo"); //this calls the city automatically when you open the page
 
 //////////////// Geolocation API
 
