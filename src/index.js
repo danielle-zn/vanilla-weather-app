@@ -121,4 +121,26 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsiusLink");
 celsiusLink.addEventListener("click", displayCeksiusTemperature);
 
-search("Tokyo"); //this calls the city automatically when you open the page/ best to have it at the bottom
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sat", "Sun", "Mon", "Tue"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="card" style="width: 7rem">
+      <p class="card-text">${day}</p>
+      <img src="images/sun.png" class="card-img-top" alt="shining sun" />
+      <div class="card-body">
+        <p class="card-text">32° | 15°</p>
+      </div>
+    </div>`;
+  });
+
+  forecastHTML = forecastHTML + `<div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+search("Tokyo");
+displayForecast();
