@@ -90,11 +90,6 @@ h3 {
   top: -15px;
 }
 
-.current-temp {
-  position: relative;
-  left: 22px;
-}
-
 .current .active {
   color: black;
   text-decoration: none;
