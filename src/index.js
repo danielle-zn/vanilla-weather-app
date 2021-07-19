@@ -141,7 +141,7 @@ function displayForecast(response) {
       `
     <div class="card" style="width: 7rem">
       <p class="card-text">${day}</p>
-      <img src="images/sun.png" class="card-img-top" alt="shining sun" />
+      <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="shining sun" />
       <div class="card-body">
         <p class="card-text">32° | 15°</p>
       </div>
