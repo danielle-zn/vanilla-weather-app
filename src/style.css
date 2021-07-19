@@ -14,9 +14,9 @@ h3 {
   padding: 35px 30px;
   border-radius: 10px;
   background: linear-gradient(
-    110.5deg,
-    rgba(248, 196, 249, 0.66) 22.8%,
-    rgba(253, 122, 4, 0.15) 64.6%
+    to top,
+    rgb(251, 194, 235) 0%,
+    rgb(166, 193, 238) 100%
   );
   font-family: "Baloo Tammudu 2", cursive;
 }
