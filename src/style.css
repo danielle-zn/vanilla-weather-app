@@ -29,7 +29,7 @@ h3 {
   border-right: 2px solid #ffff;
 }
 
-.details {
+.weather-details {
   text-align: center;
   position: relative;
   top: 5px;
@@ -114,4 +114,20 @@ h3 {
   background: #ffff;
   border: 1px solid #ffff;
   color: #bd5fa7;
+}
+
+#humidity {
+  font-weight: lighter;
+}
+
+#wind {
+  font-weight: lighter;
+}
+
+.kilometers {
+  font-weight: lighter;
+}
+
+.weather-icon {
+  width: 30px;
 }
