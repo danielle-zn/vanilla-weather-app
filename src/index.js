@@ -105,7 +105,7 @@ function displayFahrenheitTemperature(event) {
   temperatureElement.innerHTML = Math.round(farenheitTemperature);
 }
 
-function displayCeksiusTemperature(event) {
+function displayCelsiusTemperature(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
@@ -119,7 +119,7 @@ let fahrenheitLink = document.querySelector("#fahrenheitLink");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsiusLink");
-celsiusLink.addEventListener("click", displayCeksiusTemperature);
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
